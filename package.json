@@ -4,6 +4,7 @@
   "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
+  "keywords": ["microservices", "rss", "json", "scraper"],
   "dependencies": {
     "rss-to-json": "^1.1.1"
   }
