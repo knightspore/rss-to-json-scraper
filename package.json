@@ -4,8 +4,20 @@
   "version": "1.0.2",
   "main": "index.js",
   "license": "MIT",
-  "keywords": ["microservices", "rss", "json", "scraper"],
+  "keywords": [
+    "microservices",
+    "rss",
+    "json",
+    "scraper"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
     "rss-to-json": "^1.1.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "jest-tobetype": "^1.2.3"
   }
 }
