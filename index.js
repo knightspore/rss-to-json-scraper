@@ -3,7 +3,7 @@ var RSSFeed = require('rss-to-json');
 // Parse RSS Feed
 async function parseRssToJson (url) {
     var rss = await RSSFeed.load(url);
-    return JSON.stringify(rss, null, 3);
+    return rss;
 };
 
 // Scraper Function - Runs for Each URL and Opens and Closes JSON as an Array
@@ -16,5 +16,5 @@ exports.run = async function scrapeProductsFrom(theUrlList) {
         ref.push(currentUrl);
     };
 
-    console.log(ref);
+    return ref
 };
